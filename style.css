@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+    
+    color: beige;
+
+    font-weight: 600px;
+}
+
+body{
+    background-image: url("assests/web_bg1.jpg");
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    background: rgb(0, 0, 0, 0.15);
+    backdrop-filter: blur(3px);
+}
+
+
+/* utilities */
+.regular-txt{
+    font-weight: 400;
+}
+
+.main-container{
+    border: solid;
+    width: 18.75rem; /* 300px converted to rem */
+    height: 32rem; /* 496px converted to rem */
+    z-index: 1;
+    background: linear-gradient(to top, rgba(230, 127, 67, 0.8), rgb(247, 210, 141));
+    border-radius: 1.5625rem; /* 25px converted to rem */
+    background-color: wheat;
+    padding: 1.25rem; /* 20px converted to rem */
+}
+
+
+/* city input bar */
+.input-bar{
+    position: relative;
+    margin-bottom: 1.5625rem; /* 25px converted to rem */
+}
+
+.city-input{
+    width: 100%;
+    padding: 0.625rem 1rem; /* 10px 16px converted to rem */
+    border-radius: 1.5625rem; /* 25px converted to rem */
+    border: 0.1875rem solid transparent; /* 3px converted to rem */
+    background-color: beige;
+    outline: none;
+    font-weight: 400;
+    transition: 0.25s border;
+    padding-right: 3.125rem; /* 50px converted to rem */
+}
+
+.city-input:focus{
+    border: 0.1875rem solid rgb(235, 158, 80); /* 3px converted to rem */
+    color:peru;
+}
+
+.city-input::placeholder{
+    color: rgba(205, 134, 63, 0.434);
+}
+
+.search{
+    position: absolute;
+    right: 1rem; /* 16px converted to rem */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    display: flex;
+    border: none;
+}
+
+.material-symbols-outlined{
+    color: peru;
+}
+
+
+/* weather info */
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem; /* 25px converted to rem */
+}
+
+.location-date-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 0.375rem; /* 6px converted to rem */
+}
+
+.citynow{
+    color: peru;
+}
+
+.current-date{
+    color: peru;
+}
+
+.weather-summary-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.1875rem; /* 99px converted to rem */
+}
+
+.weather-summary-img{
+    max-width: 6em;
+}
+
+.weather-summary-info{
+    text-align: end;
+}
+
+.weather-summary-info h1{
+    color: beige;
+}
+
+.weather-summary-info h3{
+    color: rgba(245, 245, 220, 0.75);
+}
+
+.weather-conditions-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.condition-items{
+    display: flex;
+    align-items: center;
+    gap: 0.375rem; /* 6px converted to rem */
+    padding-left: 0.375rem; /* 6px converted to rem */
+}
+
+.forecast-items-container{
+    display: flex;
+    margin-top: 1.25rem; /* 20px converted to rem */
+    gap: 0.9375rem; /* 15px converted to rem */
+    overflow-x: scroll;
+    padding-bottom: 0.75rem; /* 12px converted to rem */
+}
+
+.forecast-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-items-container::-webkit-scrollbar{
+    height: 0.5rem; /* 8px converted to rem */
+}
+
+.forecast-items-container::-webkit-scrollbar-track{
+    background-color: rgba(245, 245, 220, 0.178);
+    border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb{
+    background-color: rgba(245, 245, 220, 0.21);
+    border-radius: 99px;
+}
+
+.forecast-item{
+    min-width: 3.75rem; /* 60px converted to rem */
+    background-color: rgba(245, 245, 220, 0.342);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem; /* 5px converted to rem */
+    padding: 0.4375rem; /* 7px converted to rem */
+    align-items: center;
+    border-radius: 0.75rem; /* 12px converted to rem */
+}
+
+.forecast-item:hover{
+    background-color: rgba(245, 245, 220, 0.45);
+}
+
+
+/* section messages */
+.section-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.9375rem; /* 15px converted to rem */
+    margin-top: 25%;
+}
+
+.message-img{
+    height: 11.25rem; /* 180px converted to rem */
+    width: fit-content;
+}
