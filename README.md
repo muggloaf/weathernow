@@ -1,6 +1,6 @@
-# Weather Now
+# WeatherNow 🔆
 
-## Project Overview
+## Project Overview 
 Weather Now is an interactive web application that provides real-time weather information and 5-day forecasts for cities worldwide. The application leverages the OpenWeatherMap API to fetch accurate meteorological data, presenting it through an intuitive and responsive user interface.
 
 
