@@ -1,9 +1,7 @@
-# Weather Now
+# WeatherNow 🔆
 
 ## Project Overview
 Weather Now is an interactive web application that provides real-time weather information and 5-day forecasts for cities worldwide. The application leverages the OpenWeatherMap API to fetch accurate meteorological data, presenting it through an intuitive and responsive user interface.
-
-![Weather Now Application](assests/weather-app.png)
 
 ## Features
 - **Current Weather Display**: Shows temperature, weather conditions, humidity, and wind speed
@@ -65,14 +63,12 @@ The application uses the OpenWeatherMap API with two key endpoints:
 
 Note: The application uses a free OpenWeatherMap API key included in the repository for demonstration purposes.
 
-Note: The `config.js` file is ignored by git to protect your API key.
-
 ## Dependencies
 - OpenWeatherMap API (requires API key)
 - Modern web browser with JavaScript enabled
 
 ## Author
-[Your Name]
+Alesha Mulla - [muggloaf](https://github.com/muggloaf)
 
 ## License
 This project is submitted as an academic assignment and is not licensed for commercial use.
