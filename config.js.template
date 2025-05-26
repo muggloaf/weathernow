@@ -1,0 +1,6 @@
+// This file contains configuration settings for the Weather Now application
+// This is a template - replace the placeholder with your API key
+const CONFIG = {
+    // API key for OpenWeatherMap
+    API_KEY: "YOUR_API_KEY_HERE"
+};
